@@ -1,8 +1,11 @@
+import datetime
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from src import schemas, crud
 from src.api import deps
+from src.schemas import SalaryCreate
 
 router = APIRouter()
 
@@ -24,4 +27,10 @@ def create_user(
             detail="The user with this username or email already exists in the system."
         )
     user = crud.user.create_user(db, obj_in=user_in)
+    make_salary = SalaryCreate(
+        amount=0,
+        update=datetime.datetime.now(),
+        user_id=user.id
+    )
+    crud.salary.create(db, obj_in=make_salary)
     return user
