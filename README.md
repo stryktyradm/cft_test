@@ -4,6 +4,7 @@
 * [Docker Compose](https://docs.docker.com/compose/install/).
 * [Poetry](https://python-poetry.org/) for Python package and environment management.
 
+### 1. Запуск с помощью docker compose.
 
 Для запуска всех частей проекта неоходимо выполнить:
 
@@ -37,3 +38,6 @@ docker compose up -d
 2. **salary** - используя полученный jwt-токен запросить конфиденциальные данные зарплаты конкретного пользователя(зарпалата, дата повышения).
 3. **users** - создать нового пользователя(по необходимости).
 
+### 2. Запуск тестов.
+
+[Для запуска тестов см.](./app/README.md)
