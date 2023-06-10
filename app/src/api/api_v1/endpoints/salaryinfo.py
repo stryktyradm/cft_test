@@ -10,9 +10,4 @@ router = APIRouter()
 def show_user_salary(
     current_user: models.User = Depends(current_user_from_token)
 ):
-    '''
-
-    :param current_user:
-    :return:
-    '''
     return current_user.salary

@@ -13,12 +13,6 @@ def create_user(
         db: Session = Depends(deps.get_db),
         user_in: schemas.UserCreate
 ):
-    '''
-
-    :param db:
-    :param user_in:
-    :return:
-    '''
     user = crud.user.get_by_email_or_username(
         db=db,
         email=user_in.email,
