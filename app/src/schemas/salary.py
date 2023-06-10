@@ -5,12 +5,12 @@ from pydantic import BaseModel
 
 
 class SalaryBase(BaseModel):
-    amount: Optional[float] = None
+    amount: Optional[int] = None
     update: Optional[date] = None
 
 
 class SalaryCreate(SalaryBase):
-    amount: float
+    amount: int
     update: date
     user_id: int
 

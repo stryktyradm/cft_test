@@ -34,23 +34,23 @@ class Settings(BaseSettings):
     @validator("EMAIL_TEST_USER", pre=True)
     def split_email_list(cls, v: Optional[str]):
         if isinstance(v, str):
-            return v.split(', ')
+            return v.split(',')
         return v
 
     @validator("USERNAME_TEST_USER", pre=True)
     def split_username_list(cls, v: Optional[str]):
         if isinstance(v, str):
-            return v.split(', ')
+            return v.split(',')
         return v
 
     @validator("PASSWORD_TEST_USER", pre=True)
     def split_password_list(cls, v: Optional[str]):
         if isinstance(v, str):
-            return v.split(', ')
+            return v.split(',')
         return v
 
     class Config:
-        # env_file = ".testenv"
+        # env_file = "test_env_vars.sh"
         case_sensitive = True
 
 
