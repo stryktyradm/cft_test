@@ -4,16 +4,16 @@
 * [Docker Compose](https://docs.docker.com/compose/install/).
 * [Poetry](https://python-poetry.org/) for Python package and environment management.
 
-### 1. Запуск с помощью docker compose.
+## 1. Запуск с помощью docker compose.
 
 Для запуска всех частей проекта неоходимо выполнить:
 
-1. Для сборки образов:
+### 1. Для сборки образов:
 ```shell
 docker compose build
 ```
 
-2. Для запуска всех сервисов:
+### 2. Для запуска всех сервисов:
 ```shell
 docker compose up -d
 ```
@@ -38,13 +38,13 @@ docker compose up -d
 * **salary** - используя полученный jwt-токен запросить конфиденциальные данные зарплаты конкретного пользователя(зарпалата, дата повышения).
 * **users** - создать нового пользователя (по необходимости).
 
-3. Остановить все сервисы:
+### 3. Остановить все сервисы:
 
 ```shell
 docker compose down
 ```
 
 
-### 2. Запуск тестов.
+## 2. Запуск тестов.
 
 [Для запуска тестов см.](./app/README.md)
