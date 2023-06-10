@@ -4,7 +4,7 @@
 * [Docker Compose](https://docs.docker.com/compose/install/).
 * [Poetry](https://python-poetry.org/) for Python package and environment management.
 
-## 1. Запуск с помощью docker compose.
+## 1. Запуск с помощью docker compose
 
 Для запуска всех частей проекта неоходимо выполнить:
 
@@ -45,6 +45,6 @@ docker compose down
 ```
 
 
-## 2. Запуск тестов.
+## 2. Запуск тестов
 
 [Для запуска тестов см.](./app/README.md)
