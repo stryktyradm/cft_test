@@ -1,4 +1,4 @@
 set -e
 set -x
 
-pytest --cov=src --cov-report=term-missing src/tests "${@}"
+pytest --cov=src --cov-report=html src/tests "${@}"
